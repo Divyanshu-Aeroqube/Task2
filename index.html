@@ -11,12 +11,12 @@
 
     <header class="nav flex justify-between items-center fixed w-full h-2 bg-white shadow-lg shadow-gray-500/50 p-6 z-10">
 
-        <h5><span class="font-bold">BR</span> Architacts</h5>
+        <h5><span class="font-bold ">BR</span> Architacts</h5>
 
         <section class="flex justify-around gap-10">
-            <p><a href="#Projects">Projects</a></p>
-            <a href="#About">About</a>
-            <p><a href="#Contact">Contacts</a></p>
+            <a href="#Projects" class="hover:bg-gray-200 p-2">Projects</a>
+            <a href="#About"  class="hover:bg-gray-200 p-2">About</a>
+            <a href="#Contact"  class="hover:bg-gray-200 p-2">Contacts</a>
         </section>
 
 
@@ -27,12 +27,12 @@
         <section class="landing_image">
 
             <img src="./assets/architect.jpg" alt="architect" class="w-full h-full object-cover">
-            <h1 class="absolute inset-7 flex items-center justify-center text-white gap-1 text-2xl" ><span class="font-bold bg-[rgba(0,0,0,0.5)] m-2px p-2px text-2xl">BR</span> Architacts</h1>
+            <h1 class="absolute inset-7 flex items-center justify-center text-white gap-1 text-2xl" ><span class="font-bold bg-[rgba(0,0,0,0.5)] m-2 p-2 text-2xl">BR</span> Architacts</h1>
         </section>
 
         <section id="Projects" class=" scroll-mt-16">
             <h2 class="mt-5 mb-2 font-bold ml-2 text-xl scroll-mt-16">Projects</h2>
-            <hr>
+            <hr class="border-gray-300">
             <div id="project_container" class="flex justify-evenly flex-wrap gap-4 p-4">
                 <div class=" bg-white shadow-lg rounded-lg flex-[1_1_22%] text-center relative z-index-0">
                     <img src="./assets/house.jpg" alt="house" class="w-full h-full object-cover">
@@ -45,47 +45,48 @@
         <section id="About" class=" scroll-mt-16">
 
             <h2 class="mt-5 mb-2 font-bold ml-2 text-xl">About</h2>
-            <hr class="">
+            <hr class="border-gray-300" >
             <p class="text-l my-15 mx-2">Lorem ipsum dolor  officia neque perferendis modi tempore similique pariatur commodi doloremque labore deserunt perspiciatis. Quibusdam veniam, perspiciatis laborum optio nesciunt recusandae beatae! Reiciendis debitis magnam porro cum alias. Quas exercitationem eaque doloribus excepturi rem sint repellendus ullam ut laboriosam in. Autem, velit laboriosam dicta veritatis harum ipsam facere quis sequi veniam labore inventore suscipit impedit. Ex, alias dolor asperiores, excepturi 
                  voluptate impedit.</p>
 
-            <div class="About_cardContainer flex justify-evenly flex-wrap gap-4 p-4">
-                <div class="abouCard flex-[1_1_22%] text-center">
+            <div class="About_cardContainer flex justify-evenly flex-wrap gap-4 p-4
+            ">
+                <div class="abouCard flex-[1_1_22%] ">
                     <img src="./assets/team1.jpg" alt="member">
-                    <h3>John Doe</h3>
-                    <h5>CEO & Founder</h5>
+                    <h3 class="font-bold text-xl ">John Doe</h3>
+                    <h5 class="text-l">CEO & Founder</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. abore minima? Soluta possimus unde officia ut!</p>
-                    <button>Contact</button>
+                    <div class="w-full bg-gray-400  py-1 px-3 text-center mt-3 ">Contact</div>
                 </div>
             </div>
         </section>
 
 
         <section id="Contact" class=" scroll-mt-16">
-            <h2>Contact</h2>
-            <hr>
-            <p>Lets get in touch and talk about your next project</p>
-            <form action="">
-                <input type="text" name="" id="" placeholder="Name">
+            <h2 class="mt-5 mb-2 font-bold ml-2 text-xl">Contact</h2>
+            <hr class="border-gray-300">
+            <p class="m-3 " >Lets get in touch and talk about your next project</p>
+            <form action="" class="flex flex-col mx-3 gap-4">
+                <input class=" w-full p-1 border-1 border-gray-400" type="text" name="" id="" placeholder="Name">
 
-                <input type="text" placeholder="Email">
+                <input class=" w-full p-1 border-1 border-gray-400" type="text" placeholder="Email">
 
-                <input type="text" placeholder="Subject">
+                <input class=" w-full p-1 border-1 border-gray-400" type="text" placeholder="Subject">
 
-                <input type="text" name="" id="" placeholder="Comment">
+                <input class=" w-full p-1 border-1 border-gray-400" type="text" name="" id="" placeholder="Comment">
 
-                <input type="button" value="SEND MESSAGE">
+                <button class="bg-black text-white w-fit p-1 mt-3 mb-5">SEND MESSAGE</button>
             </form>
 
         </section>
 
 
         <section>
-            <img src="./assets/map.jpg" alt="map">
+            <img class="w-full px-2" src="./assets/map.jpg" alt="map">
         </section>
 
     </main>
-    <footer>
+    <footer class="flex justify-center items-center bg-black text-white text-xl py-4">
         <p>Powered by w3.css</p>
     </footer>
 

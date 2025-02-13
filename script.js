@@ -49,19 +49,19 @@ const teamMembers = [
         imgSrc: './assets/team1.jpg',
         name: 'John Doe',
         position: 'CEO & Founder',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio odit illo porro architecto labore minima? Soluta possimus unde officia ut!'
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. abore minima? Soluta possimus unde officia ut!"
     },
     {
         imgSrc: './assets/team2.jpg',
         name: 'Jane Smith',
         position: 'CTO',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at dolor eget urna viverra laoreet.'
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. abore minima? Soluta possimus unde officia ut!"
     },
     {
         imgSrc: './assets/team4.jpg',
         name: 'Mark Johnson',
         position: 'Lead Developer',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quidem odit dolorum iure eius suscipit.'
+        description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. abore minima? Soluta possimus unde officia ut!"
     }
 ];
 
@@ -73,14 +73,17 @@ const createAboutCards = () => {
     teamMembers.map(member => {
 
         const aboutCard = document.createElement('div');
-        aboutCard.classList.add('abouCard','flex-[1_1_22%]' ,'text-center'); 
+        aboutCard.classList.add('abouCard','flex-[1_1_22%]'); 
 
         const img = document.createElement('img');
         img.src = member.imgSrc;
         img.alt = 'member';
+        
 
         const name = document.createElement('h3');
         name.textContent = member.name;
+
+        name.classList.add('text-xl','font-bold');
 
 
         const position = document.createElement('h5');
@@ -92,6 +95,7 @@ const createAboutCards = () => {
 
         const button = document.createElement('button');
         button.textContent = 'Contact';
+        button.classList.add("w-full", "bg-gray-400",  "py-1", "px-3", "text-center", "mt-3");
 
         aboutCard.appendChild(img);
         aboutCard.appendChild(name);
